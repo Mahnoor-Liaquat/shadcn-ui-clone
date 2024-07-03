@@ -25,13 +25,13 @@ const Header = () => {
 
   return (
     <div
-      className={`min-h-screen ${
+      className={`min-h-[70vh] ${
         darkMode ? "bg-gray-900 text-gray-100" : "bg-white text-gray-900"
       }`}
     >
       <header
         className={`bg-white dark:bg-gray-800 ${
-          darkMode ? "bg-gray-800" : "bg-white"
+          darkMode ? "bg-gray-400" : "bg-white"
         } w-full`}
       >
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -263,38 +263,34 @@ const Header = () => {
       </header>
 
       <section>
-        <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
-          <div className="mx-auto max-w-xl text-center">
-            <h1 className="text-3xl font-extrabold sm:text-4xl">
-              Build your component library
-            </h1>
-            <p className="mt-4 sm:text-xl/relaxed">
-              Beautifully designed components that you can copy and paste into
-              your apps. Accessible. Customizable. Open Source.
-            </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a
-                className="block rounded bg-red-600 px-8 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:
+  <div className="mx-auto max-w-screen-l py-16 lg:flex lg:items-center">
+    <div className="mx-auto max-w-xl text-center">
+      <h1 className="text-3xl font-extrabold sm:text-4xl">
+        Build your component library
+      </h1>
+      <p className="mt-4 sm:text-xl/relaxed">
+        Beautifully designed components that you can copy and paste into
+        your apps. Accessible. Customizable. Open Source.
+      </p>
+      <div className="mt-8 flex flex-wrap justify-center gap-4">
+        <a
+          className="block rounded bg-red-600 px-8 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active"
+          href="#"
+        >
+          Get Started
+        </a>
+        <a
+          className="block rounded bg-white px-8 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto flex items-center"
+          href="#"
+        >
+          <FaGithub className="h-5 w-5 mr-1" />     
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-
-ring active
-sm
-"
-                href="#"
-              >
-                Get Started
-              </a>
-              <a
-                className="block rounded bg-white px-8 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto flex items-center"
-                href="#"
-              >
-                <FaGithub className="h-5 w-5 mr-1" />     
-                <span>GitHub</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
